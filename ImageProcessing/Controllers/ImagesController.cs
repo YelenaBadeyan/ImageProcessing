@@ -1,6 +1,5 @@
 ﻿using ImageProcessing.Models;
 using ImageProcessing.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ImageProcessing.Controllers

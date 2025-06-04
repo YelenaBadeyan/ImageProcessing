@@ -21,7 +21,8 @@ namespace ImageProcessing.Services
 
                 if (plugin == null)
                 {
-                    image += $" -> [Skipped: Plugin '{effect.PluginName}' not found]";
+                    var suggestions = _pluginManager.GetAvailablePluginNames();
+                    image += $" -> [Skipped: Plugin '{effect.PluginName}' not found. We currently support: {string.Join(", ", suggestions)}]";
                     continue;
                 }
 
